@@ -1,4 +1,5 @@
 package com.abhi.prep;
+
 import java.util.Arrays;
 
 public class InertialArray {
@@ -12,13 +13,13 @@ public class InertialArray {
 
 		boolean lastIndexEven = false;
 		boolean isInertial = true;
-		int retVal=1;
+		int retVal = 1;
 		int length = ar.length;
 		// After sorting in ASC order checking is last index is an even number
 		if (ar[length - 1] % 2 == 0) {
 			lastIndexEven = true;
-		}else {
-			retVal=0;
+		} else {
+			retVal = 0;
 		}
 		if (lastIndexEven) {
 			for (int i = 0; i < length - 1; i++) {
@@ -32,8 +33,8 @@ public class InertialArray {
 						// number of times) are not bigger than odd number
 						if (ar[j] % 2 == 0 && ar[j] != ar[length - 1]) {
 							if (oddNumber < ar[j]) {
-								isInertial=false;
-								retVal= 0;
+								isInertial = false;
+								retVal = 0;
 								break;
 							}
 						}
@@ -42,12 +43,8 @@ public class InertialArray {
 				}
 			}
 		}
-		//System.out.println("Is inertial   :   " + isInertial);
+		// System.out.println("Is inertial : " + isInertial);
 		return retVal;
 	}
-	
-	
-	
-	
 
 }
