@@ -5,9 +5,9 @@ public class InertialArray {
 	public static int isInertial(int[] ar) {
 
 		if (null != ar && 2 < ar.length) {
-			ar=sortArray(ar);
+			ar = sortArray(ar);
 
-		}else {
+		} else {
 			return 0;
 		}
 
@@ -46,21 +46,19 @@ public class InertialArray {
 		// System.out.println("Is inertial : " + isInertial);
 		return retVal;
 	}
-	
-	
-	
+
 	public static int[] sortArray(int[] ar) {
-		int temp=0;
-		for(int i=0;i<ar.length;i++) {
-			for(int j=i;j>0;j--) {
-			if(ar[j]<ar[j-1]) {
-				temp=ar[j];
-				ar[j]=ar[j-1];
-				ar[j-1]=temp;
-			}}
+		int temp = 0;
+		for (int i = 0; i < ar.length; i++) {
+			for (int j = i; j > 0; j--) {
+				if (ar[j] < ar[j - 1]) {
+					temp = ar[j];
+					ar[j] = ar[j - 1];
+					ar[j - 1] = temp;
+				}
+			}
 		}
 		return ar;
 	}
-	
 
 }
