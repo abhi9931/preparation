@@ -1,6 +1,6 @@
 package com.abhi.prep;
 
-public class NUnique {
+public class N_Unique {
 	
 	public static int isNUnique(int[] ar,int n) {
 		int count=0;

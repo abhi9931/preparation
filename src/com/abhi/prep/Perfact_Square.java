@@ -1,6 +1,6 @@
 package com.abhi.prep;
 
-public class PerfactSquare {
+public class Perfact_Square {
 
 	
 	public static int isSquare(int n) {
