@@ -3,6 +3,7 @@ package com.abhi.prep.main;
 import com.abhi.prep.InertialArray;
 import com.abhi.prep.MadhavArray;
 import com.abhi.prep.N_Unique;
+import com.abhi.prep.NextPerfactSquare;
 import com.abhi.prep.Perfact_Square;
 import com.abhi.prep.PrimeNumber;
 
@@ -14,7 +15,9 @@ public class DriverClass {
 		//System.out.println(PrimeNumber.primeCount(1, 1));
 		//System.out.println(NUnique.isNUnique(input, 6));
 		
-		System.out.println(Perfact_Square.isSquare(36));
+		//System.out.println(Perfact_Square.isSquare(36));
+		
+		System.out.println(NextPerfactSquare.nextPerfactSquare(-5));
 	}
 
 }
