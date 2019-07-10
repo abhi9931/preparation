@@ -1,13 +1,13 @@
 package com.abhi.prep;
 
 public class NextPerfactSquare {
-
+public static final int NOT_PERFECT_SQUARE=-1;
 	public static int nextPerfactSquare(int number) {
 		// If a number is perfect square then calculate the sqrt increase by one and
 		// then squaring it
 		int sqrt = squareRoot(number);
 		int nextPerfactSquare = 0;
-		if (sqrt != -1) {
+		if (sqrt != NOT_PERFECT_SQUARE) {
 			nextPerfactSquare = Math.multiplyExact(sqrt + 1, sqrt + 1);
 		}
 		// If a number is not perfect square then incrementing the number by one and
@@ -15,7 +15,7 @@ public class NextPerfactSquare {
 		else {
 			for (int i = number;; i++) {
 				sqrt = squareRoot(i);
-				if (sqrt != -1) {
+				if (sqrt != NOT_PERFECT_SQUARE) {
 					nextPerfactSquare = i;
 					break;
 				}
@@ -33,7 +33,7 @@ public class NextPerfactSquare {
 				}
 			}
 
-		return -1;
+		return NOT_PERFECT_SQUARE;
 	}
 
 }
