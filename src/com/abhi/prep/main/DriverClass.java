@@ -18,9 +18,9 @@ public class DriverClass {
 		//System.out.println(NextPerfactSquare.nextPerfactSquare(-5));
 		
 		//System.out.println(SquarePair.countSquarePairs(input));
-		//System.out.println(PorCupineNumber.findPorcupineNumber(59));
+		System.out.println(PorCupineNumber.findPorcupineNumber(139));
 		//System.out.println(GuthrieSequence.isGuthrieSequence(input));
-		System.out.println(StantonMeasure.stantonMeasure(input));
+		//System.out.println(StantonMeasure.stantonMeasure(input));
 	}
 
 }

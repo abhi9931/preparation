@@ -11,15 +11,38 @@ public class PorCupineNumber {
 					break;
 				}
 			}
+
 		}
-		boolean isPrime = false;
-		for (int i = 0;; i++) {
-			num = num + 10;
-			isPrime = checkPrimeNumber(num);
-			if (isPrime)
-				break;
+		return findNextPrimeNumberThatEndsWith_9(num);
+
+	}
+
+	public static int findNextPrimeNumberThatEndsWith_9(int num) {
+		int i = 0;
+		for (i = num + 10;; i = i + 10) {
+
+			if (checkPrimeNumber(i)) {
+				if (findIfNextPrimeNumberAlsoEndsWith_9(i))
+					break;
+			}
 		}
-		return num;
+		return i;
+	}
+
+	public static boolean findIfNextPrimeNumberAlsoEndsWith_9(int num) {
+		boolean nextPrime = false;
+		for (int i = num + 1; i <= num + 10; i++) {
+			if (checkPrimeNumber(i)) {
+				if (i % 10 != 9) {
+					nextPrime = false;
+					break;
+				} else if (i % 10 == 9) {
+					nextPrime = true;
+					break;
+				}
+			}
+		}
+		return nextPrime;
 	}
 
 	public static boolean checkPrimeNumber(int num) {
