@@ -1,6 +1,7 @@
 package com.abhi.prep.main;
 
 import com.abhi.prep.Centered_15;
+import com.abhi.prep.CheckDivisible;
 import com.abhi.prep.GuthrieSequence;
 import com.abhi.prep.PerfectNumber;
 import com.abhi.prep.PorCupineNumber;
@@ -18,7 +19,7 @@ public class DriverClass {
 		//int[] input ={1,1,8, 3, 1, 1};
 		//int[] input ={9, 15, 6};
 		//int[] input ={1, 1, 2, 2, 1, 1};
-		int[] input ={1, 1, 15 -1,-1};
+		int[] input ={6, 12, 24, 36};
 	//	System.out.println("Is Inertial Array\t" + InertialArray.isInertial(input));
 		//System.out.println("\nIs Madhav Array\t" + MadhavArray.isMadhavArray(input));
 		//System.out.println(PrimeNumber.primeCount(1, 1));
@@ -36,7 +37,10 @@ public class DriverClass {
 		//System.out.println(Solve10.solve10());
 		//System.out.println(RespEqual.repsEqualRaw(input, 32053));
 		//System.out.println(Centered_15.isCentered15(input));
-		System.out.println(PerfectNumber.henry(1, 3));
+		//System.out.println(PerfectNumber.henry(1, 3));
+		
+		
+		System.out.println(CheckDivisible.isDivisible(input, 12));
 	}
 
 }
