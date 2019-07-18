@@ -6,7 +6,7 @@ public class PorCupineNumber {
 
 		if (num % 10 != 9) {
 			for (int i = 0;; i++) {
-				num = num + 1;
+				num = num - 1;
 				if (num % 10 == 9) {
 					break;
 				}
